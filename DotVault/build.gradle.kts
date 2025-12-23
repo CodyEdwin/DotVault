@@ -1,6 +1,5 @@
-plugin {
+plugins {
     id("application")
-    id("org.jetbrains.kotlin.jvm") version "1.9.20"
     id("org.openjfx.javafxplugin") version "0.0.13"
 }
 
@@ -49,14 +48,14 @@ javafx {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
 }
 
 tasks.withType<JavaCompile> {
     options.encoding = "UTF-8"
 }
 
-tasks.named("run") {
+tasks.named<JavaExec>("run") {
     workingDir = File(".")
 }

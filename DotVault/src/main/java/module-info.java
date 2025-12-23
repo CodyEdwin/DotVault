@@ -1,14 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<module>
-    <requires>
-        <module name="javafx.controls"/>
-        <module name="javafx.fxml"/>
-        <module name="javafx.graphics"/>
-        <module name="javafx.base"/>
-        <module name="javafx.web"/>
-    </requires>
+module com.dotvault {
+    requires javafx.controls;
+    requires javafx.fxml;
+    requires javafx.graphics;
+    requires javafx.base;
+    requires javafx.web;
+    requires java.desktop;
     
-    <provides>
-        <service name="com.dotvault.service.ConfigScanner"/>
-    </provides>
-</module>
+    exports com.dotvault;
+    exports com.dotvault.controller;
+    exports com.dotvault.model;
+    exports com.dotvault.service;
+    exports com.dotvault.util;
+    
+    opens com.dotvault.controller to javafx.fxml;
+    opens com.dotvault.model to javafx.base;
+}
