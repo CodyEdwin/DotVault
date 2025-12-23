@@ -1,6 +1,8 @@
 .gradle
 **/build/
 !src/**/build/
+jdk-17.0.9+9/
+jdk-21.0.9+10/
 
 # Ignore Gradle GUI config
 gradle-app.setting
