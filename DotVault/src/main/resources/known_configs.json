@@ -1,0 +1,1229 @@
+{
+  "Shell Configuration": {
+    "Bash": {
+      "description": "Bourne Again Shell configuration files",
+      "configs": [
+        {"path": "~/.bashrc", "description": "Bash interactive shell configuration"},
+        {"path": "~/.bash_profile", "description": "Bash login shell configuration"},
+        {"path": "~/.bash_logout", "description": "Commands run on bash logout"},
+        {"path": "~/.inputrc", "description": "Readline initialization file"}
+      ]
+    },
+    "Zsh": {
+      "description": "Z Shell configuration files",
+      "configs": [
+        {"path": "~/.zshrc", "description": "Zsh interactive shell configuration"},
+        {"path": "~/.zprofile", "description": "Zsh login shell configuration"},
+        {"path": "~/.zshenv", "description": "Zsh environment variables"},
+        {"path": "~/.zlogout", "description": "Commands run on zsh logout"},
+        {"path": "~/.zcompdump", "description": "Zsh completion dump file"},
+        {"path": "~/.zpreztorc", "description": "Prezto configuration (if using Prezto)"}
+      ]
+    },
+    "Fish": {
+      "description": "Friendly Interactive Shell configuration",
+      "configs": [
+        {"path": "~/.config/fish/config.fish", "description": "Fish shell configuration", "directory": false},
+        {"path": "~/.config/fish/functions/", "description": "Fish custom functions", "directory": true},
+        {"path": "~/.config/fish/completions/", "description": "Fish completions", "directory": true},
+        {"path": "~/.config/fish/fish_variables", "description": "Fish environment variables"},
+        {"path": "~/.config/fish/conf.d/", "description": "Fish additional configurations", "directory": true}
+      ]
+    }
+  },
+  
+  "Terminal Emulators": {
+    "Alacritty": {
+      "description": "GPU-accelerated terminal emulator",
+      "configs": [
+        {"path": "~/.config/alacritty/alacritty.yml", "description": "Alacritty main config"},
+        {"path": "~/.config/alacritty/alacritty.toml", "description": "Alacritty TOML config"},
+        {"path": "~/.config/alacritty/theme.toml", "description": "Alacritty theme"},
+        {"path": "~/.config/alacritty/fonts/", "description": "Alacritty custom fonts", "directory": true}
+      ]
+    },
+    "Kitty": {
+      "description": "Fast, GPU-based terminal emulator",
+      "configs": [
+        {"path": "~/.config/kitty/kitty.conf", "description": "Kitty main configuration"},
+        {"path": "~/.config/kitty/theme.conf", "description": "Kitty color theme"},
+        {"path": "~/.config/kitty/fonts.conf", "description": "Kitty font configuration"},
+        {"path": "~/.config/kitty/keybindings.conf", "description": "Kitty keybindings"}
+      ]
+    },
+    "GNOME Terminal": {
+      "description": "GNOME terminal emulator",
+      "configs": [
+        {"path": "~/.config/gnome-terminal/", "description": "GNOME Terminal config", "directory": true},
+        {"path": "~/.dconf/user", "description": "Dconf database (includes terminal settings)"}
+      ]
+    },
+    "Konsole": {
+      "description": "KDE terminal emulator",
+      "configs": [
+        {"path": "~/.config/konsolerc", "description": "Konsole main configuration"},
+        {"path": "~/.config/konsole.profile", "description": "Konsole profile settings"},
+        {"path": "~/.local/share/konsole/", "description": "Konsole local data", "directory": true}
+      ]
+    },
+    "XTerm": {
+      "description": "X terminal emulator",
+      "configs": [
+        {"path": "~/.Xresources", "description": "X resources configuration"},
+        {"path": "~/.Xdefaults", "description": "X defaults configuration"},
+        {"path": "~/.termcap", "description": "Terminal capability database"},
+        {"path": "~/.terminfo", "description": "Terminal information database"}
+      ]
+    },
+    "URxvt": {
+      "description": "Unicode RXVT terminal emulator",
+      "configs": [
+        {"path": "~/.config/urxvt/.Xresources", "description": "URxvt X resources"},
+        {"path": "~/.urxvt/", "description": "URxvt additional configs", "directory": true}
+      ]
+    },
+    "WezTerm": {
+      "description": "GPU-accelerated terminal emulator",
+      "configs": [
+        {"path": "~/.config/wezterm/wezterm.lua", "description": "WezTerm Lua configuration"},
+        {"path": "~/.config/wezterm/themes/", "description": "WezTerm themes", "directory": true},
+        {"path": "~/.config/wezterm/lua/", "description": "WezTerm Lua modules", "directory": true}
+      ]
+    },
+    "Terminator": {
+      "description": "Multiple GNOME terminals in one",
+      "configs": [
+        {"path": "~/.config/terminator/config", "description": "Terminator configuration"}
+      ]
+    }
+  },
+  
+  "Text Editors": {
+    "Vim": {
+      "description": "Vi IMproved text editor",
+      "configs": [
+        {"path": "~/.vimrc", "description": "Vim main configuration"},
+        {"path": "~/.vim/", "description": "Vim configuration directory", "directory": true},
+        {"path": "~/.gvimrc", "description": "GVim configuration"},
+        {"path": "~/.viminfo", "description": "Vim session information"},
+        {"path": "~/.vimswap/", "description": "Vim swap files", "directory": true},
+        {"path": "~/.vimundo/", "description": "Vim undo files", "directory": true},
+        {"path": "~/.vimviews/", "description": "Vim view files", "directory": true}
+      ]
+    },
+    "Neovim": {
+      "description": "Hyperextensible Vim-based editor",
+      "configs": [
+        {"path": "~/.config/nvim/init.lua", "description": "Neovim main config"},
+        {"path": "~/.config/nvim/init.vim", "description": "Neovim Vimscript config"},
+        {"path": "~/.config/nvim/", "description": "Neovim config directory", "directory": true},
+        {"path": "~/.local/share/nvim/", "description": "Neovim data directory", "directory": true},
+        {"path": "~/.cache/nvim/", "description": "Neovim cache", "directory": true}
+      ]
+    },
+    "Emacs": {
+      "description": "Extensible text editor",
+      "configs": [
+        {"path": "~/.emacs", "description": "Emacs main configuration"},
+        {"path": "~/.emacs.d/", "description": "Emacs configuration directory", "directory": true},
+        {"path": "~/.emacs.el", "description": "Alternative Emacs config file"}
+      ]
+    },
+    "Spacemacs": {
+      "description": "Emacs distribution with Evil mode",
+      "configs": [
+        {"path": "~/.config/spacemacs/", "description": "Spacemacs configuration", "directory": true},
+        {"path": "~/.spacemacs", "description": "Spacemacs main config"}
+      ]
+    },
+    "VS Code": {
+      "description": "Visual Studio Code editor",
+      "configs": [
+        {"path": "~/.config/Code/User/settings.json", "description": "VS Code user settings"},
+        {"path": "~/.config/Code/User/keybindings.json", "description": "VS Code keybindings"},
+        {"path": "~/.config/Code/User/snippets/", "description": "VS Code snippets", "directory": true},
+        {"path": "~/.config/Code - OSS/User/settings.json", "description": "VSCodium settings"},
+        {"path": "~/.vscode/", "description": "VS Code workspace settings", "directory": true},
+        {"path": "~/.local/share/code-server/", "description": "Code Server data", "directory": true}
+      ]
+    },
+    "Sublime Text": {
+      "description": "Sophisticated text editor",
+      "configs": [
+        {"path": "~/.config/sublime-text/Packages/User/", "description": "Sublime Text user packages", "directory": true},
+        {"path": "~/.config/sublime-text/Packages/", "description": "Sublime Text packages", "directory": true},
+        {"path": "~/.config/sublime-text/Local/", "description": "Sublime Text local data", "directory": true}
+      ]
+    },
+    "Atom": {
+      "description": "Hackable text editor",
+      "configs": [
+        {"path": "~/.atom/", "description": "Atom configuration", "directory": true},
+        {"path": "~/.atom.cson", "description": "Atom CSON config"},
+        {"path": "~/.atom/config.cson", "description": "Atom config file"}
+      ]
+    },
+    "Nano": {
+      "description": "Pico clone text editor",
+      "configs": [
+        {"path": "~/.nanorc", "description": "Nano configuration file"}
+      ]
+    },
+    "Micro": {
+      "description": "Modern terminal-based text editor",
+      "configs": [
+        {"path": "~/.config/micro/", "description": "Micro configuration", "directory": true},
+        {"path": "~/.micro/", "description": "Micro config directory", "directory": true}
+      ]
+    },
+    "LunarVim": {
+      "description": "Neovim config layer",
+      "configs": [
+        {"path": "~/.config/lvim/", "description": "LunarVim configuration", "directory": true},
+        {"path": "~/.local/share/lunarvim/", "description": "LunarVim data", "directory": true}
+      ]
+    }
+  },
+  
+  "Window Managers": {
+    "i3": {
+      "description": "Tiling window manager",
+      "configs": [
+        {"path": "~/.config/i3/config", "description": "i3 main configuration"},
+        {"path": "~/.config/i3status/config", "description": "i3status configuration"},
+        {"path": "~/.config/i3blocks/", "description": "i3blocks configuration", "directory": true},
+        {"path": "~/.i3/", "description": "i3 legacy config directory", "directory": true}
+      ]
+    },
+    "Sway": {
+      "description": "i3-compatible Wayland compositor",
+      "configs": [
+        {"path": "~/.config/sway/config", "description": "Sway main configuration"},
+        {"path": "~/.config/swaync/", "description": "Sway notification center", "directory": true},
+        {"path": "~/.config/waybar/", "description": "Waybar configuration", "directory": true}
+      ]
+    },
+    "Openbox": {
+      "description": "Highly configurable window manager",
+      "configs": [
+        {"path": "~/.config/openbox/", "description": "Openbox configuration", "directory": true},
+        {"path": "~/.config/openbox/rc.xml", "description": "Openbox main config"},
+        {"path": "~/.config/openbox/menu.xml", "description": "Openbox menu config"},
+        {"path": "~/.config/openbox/autostart", "description": "Openbox autostart script"},
+        {"path": "~/.config/openbox/environment", "description": "Openbox environment variables"}
+      ]
+    },
+    "Awesome WM": {
+      "description": "Dynamic window manager for X11",
+      "configs": [
+        {"path": "~/.config/awesome/", "description": "Awesome WM configuration", "directory": true},
+        {"path": "~/.awesomerc", "description": "Awesome WM legacy config"}
+      ]
+    },
+    "bspwm": {
+      "description": "Tiling window manager",
+      "configs": [
+        {"path": "~/.config/bspwm/", "description": "bspwm configuration", "directory": true},
+        {"path": "~/.config/sxhkd/", "description": "sxhkd hotkey daemon", "directory": true},
+        {"path": "~/.bspwmrc", "description": "bspwm legacy config"}
+      ]
+    },
+    "herbstluftwm": {
+      "description": "Manual tiling window manager",
+      "configs": [
+        {"path": "~/.config/herbstluftwm/", "description": "Herbstluftwm config", "directory": true},
+        {"path": "~/.herbstluftwmrc", "description": "Herbstluftwm main config"}
+      ]
+    },
+    "Qtile": {
+      "description": "Full-featured tiling window manager",
+      "configs": [
+        {"path": "~/.config/qtile/", "description": "Qtile configuration", "directory": true}
+      ]
+    },
+    "XMonad": {
+      "description": "Tiling window manager for X",
+      "configs": [
+        {"path": "~/.xmonad/", "description": "XMonad configuration", "directory": true},
+        {"path": "~/.xmobarrc", "description": "XMobar config"},
+        {"path": "~/.xmonad.hs", "description": "XMonad main config"}
+      ]
+    },
+    "dwm": {
+      "description": "Dynamic window manager",
+      "configs": [
+        {"path": "~/.dwm/", "description": "dwm configuration", "directory": true},
+        {"path": "~/.config/dwm/", "description": "dwm config directory", "directory": true}
+      ]
+    },
+    "Hyprland": {
+      "description": "Dynamic tiling Wayland compositor",
+      "configs": [
+        {"path": "~/.config/hypr/", "description": "Hyprland configuration", "directory": true},
+        {"path": "~/.config/hyprland.conf", "description": "Hyprland main config"}
+      ]
+    }
+  },
+  
+  "Status Bars and Panels": {
+    "Polybar": {
+      "description": "Fast and easy-to-use status bar",
+      "configs": [
+        {"path": "~/.config/polybar/", "description": "Polybar configuration", "directory": true},
+        {"path": "~/.config/polybar/config.ini", "description": "Polybar main config"},
+        {"path": "~/.config/polybar/launch.sh", "description": "Polybar launch script"}
+      ]
+    },
+    "Waybar": {
+      "description": "Highly customizable Wayland bar",
+      "configs": [
+        {"path": "~/.config/waybar/", "description": "Waybar configuration", "directory": true},
+        {"path": "~/.config/waybar/config", "description": "Waybar main config"},
+        {"path": "~/.config/waybar/style.css", "description": "Waybar styles"}
+      ]
+    },
+    "i3status": {
+      "description": "Status bar for i3",
+      "configs": [
+        {"path": "~/.config/i3status/config", "description": "i3status configuration"},
+        {"path": "~/.config/i3status/i3status.conf", "description": "i3status main config"}
+      ]
+    },
+    "Lemonbar": {
+      "description": "Lemon又bar - X status bar",
+      "configs": [
+        {"path": "~/.config/lemonbar/", "description": "Lemonbar configuration", "directory": true},
+        {"path": "~/.config/lemonbar/config", "description": "Lemonbar config"}
+      ]
+    },
+    "Tint2": {
+      "description": "Simple panel/taskbar for X11",
+      "configs": [
+        {"path": "~/.config/tint2/", "description": "Tint2 configuration", "directory": true},
+        {"path": "~/.config/tint2/tint2rc", "description": "Tint2 main config"}
+      ]
+    },
+    "XMobar": {
+      "description": "Minimalist status bar for XMonad",
+      "configs": [
+        {"path": "~/.xmobarrc", "description": "XMobar main configuration"},
+        {"path": "~/.config/xmobar/", "description": "XMobar configuration", "directory": true}
+      ]
+    }
+  },
+  
+  "Application Launchers": {
+    "Rofi": {
+      "description": "Window switcher and application launcher",
+      "configs": [
+        {"path": "~/.config/rofi/", "description": "Rofi configuration", "directory": true},
+        {"path": "~/.config/rofi/config.rasi", "description": "Rofi main config"},
+        {"path": "~/.config/rofi/themes/", "description": "Rofi themes", "directory": true},
+        {"path": "~/.config/rofi/launchers/", "description": "Rofi launcher configs", "directory": true}
+      ]
+    },
+    "dmenu": {
+      "description": "Dynamic menu for X",
+      "configs": [
+        {"path": "~/.config/dmenu/", "description": "dmenu configuration", "directory": true}
+      ]
+    },
+    "Wofi": {
+      "description": "Wayland rofi-like application launcher",
+      "configs": [
+        {"path": "~/.config/wofi/", "description": "Wofi configuration", "directory": true},
+        {"path": "~/.config/wofi/config", "description": "Wofi main config"},
+        {"path": "~/.config/wofi/style.css", "description": "Wofi styles"}
+      ]
+    },
+    "Fuzzel": {
+      "description": "Wayland application launcher",
+      "configs": [
+        {"path": "~/.config/fuzzel/", "description": "Fuzzel configuration", "directory": true},
+        {"path": "~/.config/fuzzel/fuzzel.ini", "description": "Fuzzel main config"}
+      ]
+    },
+    "Alfred": {
+      "description": "macOS-style quick launcher (Linux)",
+      "configs": [
+        {"path": "~/.config/alfred/", "description": "Alfred configuration", "directory": true}
+      ]
+    }
+  },
+  
+  "Display Managers": {
+    "SDDM": {
+      "description": "Simple Desktop Display Manager",
+      "configs": [
+        {"path": "~/.config/sddm/", "description": "SDDM configuration", "directory": true},
+        {"path": "~/.config/sddm.conf", "description": "SDDM main config"},
+        {"path": "~/.config/sddm/themes/", "description": "SDDM themes", "directory": true}
+      ]
+    },
+    "LightDM": {
+      "description": "Cross-desktop display manager",
+      "configs": [
+        {"path": "~/.config/lightdm/", "description": "LightDM configuration", "directory": true},
+        {"path": "/etc/lightdm/lightdm-gtk-greeter.conf", "description": "LightDM GTK greeter", "directory": false},
+        {"path": "~/.config/lightdm/lightdm-gtk-greeter.conf", "description": "User LightDM greeter config"}
+      ]
+    },
+    "GDM": {
+      "description": "GNOME Display Manager",
+      "configs": [
+        {"path": "~/.config/dconf/user", "description": "Dconf (includes GDM settings)"},
+        {"path": "~/.dmrc", "description": "Desktop manager resource file"}
+      ]
+    },
+    "LXDM": {
+      "description": "LXDE Display Manager",
+      "configs": [
+        {"path": "~/.config/lxdm/", "description": "LXDM configuration", "directory": true},
+        {"path": "~/.config/lxdm/lxdm.conf", "description": "LXDM main config"}
+      ]
+    }
+  },
+  
+  "Display and Graphics": {
+    "Picom": {
+      "description": "X compositor (formerly compton)",
+      "configs": [
+        {"path": "~/.config/picom.conf", "description": "Picom main configuration"},
+        {"path": "~/.config/picom/picom.conf", "description": "Picom config file"},
+        {"path": "~/.compton.conf", "description": "Compton legacy config"},
+        {"path": "~/.config/compton.conf", "description": "Compton config"}
+      ]
+    },
+    "Autorandr": {
+      "description": "X11 display arrangement",
+      "configs": [
+        {"path": "~/.config/autorandr/", "description": "Autorandr profiles", "directory": true}
+      ]
+    },
+    "Arandr": {
+      "description": "X11 display configuration GUI",
+      "configs": [
+        {"path": "~/.screenlayout/", "description": "Arandr screen layouts", "directory": true}
+      ]
+    },
+    "XRandR": {
+      "description": "X display configuration",
+      "configs": [
+        {"path": "~/.xprofile", "description": "X display settings"}
+      ]
+    },
+    "Nitrogen": {
+      "description": "Wallpaper manager for X",
+      "configs": [
+        {"path": "~/.config/nitrogen/", "description": "Nitrogen configuration", "directory": true},
+        {"path": "~/.config/nitrogen/bg-saved.cfg", "description": "Nitrogen saved backgrounds"}
+      ]
+    },
+    "Feh": {
+      "description": "Image viewer and wallpaper setter",
+      "configs": [
+        {"path": "~/.fehbg", "description": "Feh wallpaper script"}
+      ]
+    }
+  },
+  
+  "Notification Daemons": {
+    "Dunst": {
+      "description": "Highly configurable notification daemon",
+      "configs": [
+        {"path": "~/.config/dunst/", "description": "Dunst configuration", "directory": true},
+        {"path": "~/.config/dunst/dunstrc", "description": "Dunst main config"}
+      ]
+    },
+    "Mako": {
+      "description": "Wayland notification daemon",
+      "configs": [
+        {"path": "~/.config/mako/", "description": "Mako configuration", "directory": true},
+        {"path": "~/.config/mako/config", "description": "Mako main config"}
+      ]
+    },
+    "Notify-osd": {
+      "description": "Ubuntu notification daemon",
+      "configs": [
+        {"path": "~/.config/notify-osd/", "description": "Notify-OSD configuration", "directory": true}
+      ]
+    },
+    "Swaync": {
+      "description": "Sway notification center",
+      "configs": [
+        {"path": "~/.config/swaync/", "description": "SwayNC configuration", "directory": true},
+        {"path": "~/.config/swaync/config", "description": "SwayNC main config"}
+      ]
+    }
+  },
+  
+  "File Managers": {
+    "Nautilus": {
+      "description": "GNOME Files",
+      "configs": [
+        {"path": "~/.config/nautilus/", "description": "Nautilus configuration", "directory": true},
+        {"path": "~/.local/share/nautilus/", "description": "Nautilus data", "directory": true}
+      ]
+    },
+    "Thunar": {
+      "description": "XFCE file manager",
+      "configs": [
+        {"path": "~/.config/Thunar/", "description": "Thunar configuration", "directory": true},
+        {"path": "~/.config/Thunar/uca.xml", "description": "Thunar custom actions"}
+      ]
+    },
+    "Dolphin": {
+      "description": "KDE file manager",
+      "configs": [
+        {"path": "~/.config/dolphinrc", "description": "Dolphin main configuration"},
+        {"path": "~/.config/dolphinviewrc", "description": "Dolphin view settings"}
+      ]
+    },
+    "Ranger": {
+      "description": "Console file manager",
+      "configs": [
+        {"path": "~/.config/ranger/", "description": "Ranger configuration", "directory": true},
+        {"path": "~/.config/ranger/rc.conf", "description": "Ranger main config"},
+        {"path": "~/.config/ranger/commands.py", "description": "Ranger custom commands"},
+        {"path": "~/.config/ranger/file_init.py", "description": "Ranger file previews"},
+        {"path": "~/.config/ranger/options.py", "description": "Ranger options"}
+      ]
+    },
+    "LF": {
+      "description": "Lightweight file manager",
+      "configs": [
+        {"path": "~/.config/lf/", "description": "LF configuration", "directory": true},
+        {"path": "~/.config/lf/lfrc", "description": "LF main config"}
+      ]
+    },
+    "Yazi": {
+      "description": "Blazing fast terminal file manager",
+      "configs": [
+        {"path": "~/.config/yazi/", "description": "Yazi configuration", "directory": true},
+        {"path": "~/.config/yazi/yazi.toml", "description": "Yazi main config"}
+      ]
+    },
+    "Nnn": {
+      "description": "N3 terminals file manager",
+      "configs": [
+        {"path": "~/.config/nnn/", "description": "nnn configuration", "directory": true},
+        {"path": "~/.nnnrc", "description": "nnn main config"}
+      ]
+    }
+  },
+  
+  "Network and Security": {
+    "SSH": {
+      "description": "Secure Shell configuration",
+      "configs": [
+        {"path": "~/.ssh/", "description": "SSH configuration directory", "directory": true},
+        {"path": "~/.ssh/config", "description": "SSH client configuration"},
+        {"path": "~/.ssh/known_hosts", "description": "SSH known hosts"},
+        {"path": "~/.ssh/authorized_keys", "description": "SSH authorized keys"},
+        {"path": "~/.ssh/id_rsa", "description": "SSH private key (RSA)"},
+        {"path": "~/.ssh/id_ed25519", "description": "SSH private key (Ed25519)"},
+        {"path": "~/.ssh/id_ecdsa", "description": "SSH private key (ECDSA)"}
+      ]
+    },
+    "GnuPG": {
+      "description": "GNU Privacy Guard",
+      "configs": [
+        {"path": "~/.gnupg/", "description": "GnuPG configuration", "directory": true},
+        {"path": "~/.gnupg/gpg.conf", "description": "GnuPG main config"},
+        {"path": "~/.gnupg/gpg-agent.conf", "description": "GPG agent config"},
+        {"path": "~/.gnupg/dirmngr.conf", "description": "Dirmngr config"}
+      ]
+    },
+    "NetworkManager": {
+      "description": "Network connection manager",
+      "configs": [
+        {"path": "~/.config/NetworkManager/", "description": "NetworkManager config", "directory": true},
+        {"path": "~/.config/NetworkManager/system-connections/", "description": "Saved connections", "directory": true}
+      ]
+    },
+    "wpa_supplicant": {
+      "description": "WPA Supplicant for WiFi",
+      "configs": [
+        {"path": "~/.config/wpa_supplicant/", "description": "wpa_supplicant config", "directory": true}
+      ]
+    },
+    "curl": {
+      "description": "URL transfer tool",
+      "configs": [
+        {"path": "~/.curlrc", "description": "cURL configuration file"}
+      ]
+    },
+    "wget": {
+      "description": "Network downloader",
+      "configs": [
+        {"path": "~/.wgetrc", "description": "Wget configuration file"}
+      ]
+    }
+  },
+  
+  "Media Players": {
+    "MPV": {
+      "description": "Video player based on MPlayer/mplayer2",
+      "configs": [
+        {"path": "~/.config/mpv/", "description": "MPv configuration", "directory": true},
+        {"path": "~/.config/mpv/input.conf", "description": "MPV input configuration"},
+        {"path": "~/.config/mpv/mpv.conf", "description": "MPV main configuration"},
+        {"path": "~/.config/mpv/scripts/", "description": "MPV scripts", "directory": true},
+        {"path": "~/.config/mpv/shaders/", "description": "MPV shaders", "directory": true}
+      ]
+    },
+    "Moc": {
+      "description": "Music on console",
+      "configs": [
+        {"path": "~/.moc/", "description": "Moc configuration", "directory": true},
+        {"path": "~/.moc/config", "description": "Moc main configuration"},
+        {"path": "~/.moc/keymap", "description": "Moc key bindings"}
+      ]
+    },
+    "CMus": {
+      "description": "Console music player",
+      "configs": [
+        {"path": "~/.config/cmus/", "description": "CMus configuration", "directory": true},
+        {"path": "~/.config/cmus/rc", "description": "CMus main config"}
+      ]
+    },
+    "MPlayer": {
+      "description": "Movie player",
+      "configs": [
+        {"path": "~/.mplayer/", "description": "MPlayer configuration", "directory": true},
+        {"path": "~/.mplayer/input.conf", "description": "MPlayer input config"},
+        {"path": "~/.mplayer/config", "description": "MPlayer main config"}
+      ]
+    },
+    "VLC": {
+      "description": "Multimedia player",
+      "configs": [
+        {"path": "~/.config/vlc/", "description": "VLC configuration", "directory": true},
+        {"path": "~/.local/share/vlc/", "description": "VLC data", "directory": true}
+      ]
+    },
+    "Spotify": {
+      "description": "Spotify desktop client",
+      "configs": [
+        {"path": "~/.config/Spotify/", "description": "Spotify configuration", "directory": true},
+        {"path": "~/.local/share/Spotify/", "description": "Spotify data", "directory": true}
+      ]
+    }
+  },
+  
+  "System Tools": {
+    "HTop": {
+      "description": "Interactive process viewer",
+      "configs": [
+        {"path": "~/.config/htop/", "description": "htop configuration", "directory": true},
+        {"path": "~/.config/htop/htoprc", "description": "htop main config"}
+      ]
+    },
+    "Btop": {
+      "description": "Resource monitor",
+      "configs": [
+        {"path": "~/.config/btop/", "description": "btop configuration", "directory": true},
+        {"path": "~/.config/btop/btop.conf", "description": "btop main config"}
+      ]
+    },
+    "Bottom": {
+      "description": "Graphical process/system monitor",
+      "configs": [
+        {"path": "~/.config/bottom/", "description": "bottom configuration", "directory": true},
+        {"path": "~/.config/bottom/bottom.toml", "description": "bottom main config"}
+      ]
+    },
+    "Neofetch": {
+      "description": "System information tool",
+      "configs": [
+        {"path": "~/.config/neofetch/", "description": "Neofetch configuration", "directory": true},
+        {"path": "~/.config/neofetch/config.conf", "description": "Neofetch config"}
+      ]
+    },
+    "Fastfetch": {
+      "description": "Neofetch fork with more features",
+      "configs": [
+        {"path": "~/.config/fastfetch/", "description": "Fastfetch configuration", "directory": true},
+        {"path": "~/.config/fastfetch/config.jsonc", "description": "Fastfetch config"},
+        {"path": "~/.config/fastfetch/config.json", "description": "Fastfetch config"}
+      ]
+    },
+    "Screenfetch": {
+      "description": "Screenshot system info tool",
+      "configs": [
+        {"path": "~/.config/screenfetch/", "description": "Screenfetch config", "directory": true}
+      ]
+    },
+    "PulseAudio": {
+      "description": "Sound system",
+      "configs": [
+        {"path": "~/.config/pulse/", "description": "PulseAudio config", "directory": true},
+        {"path": "~/.config/pulse/daemon.conf", "description": "Pulse daemon config"}
+      ]
+    },
+    "ALSA": {
+      "description": "Advanced Linux Sound Architecture",
+      "configs": [
+        {"path": "~/.asoundrc", "description": "ALSA configuration file"},
+        {"path": "~/.asoundrc.asoundconf", "description": "ALSA asoundconf"}
+      ]
+    }
+  },
+  
+  "Version Control": {
+    "Git": {
+      "description": "Distributed version control",
+      "configs": [
+        {"path": "~/.gitconfig", "description": "Git global configuration"},
+        {"path": "~/.gitignore_global", "description": "Global gitignore file"},
+        {"path": "~/.gitattributes_global", "description": "Global gitattributes file"},
+        {"path": "~/.gitmessage", "description": "Git commit message template"},
+        {"path": "~/.gitflow", "description": "Git flow configuration", "directory": true}
+      ]
+    },
+    "Mercurial": {
+      "description": "Distributed version control",
+      "configs": [
+        {"path": "~/.hgrc", "description": "Mercurial configuration file"},
+        {"path": "~/.hgignore", "description": "Mercurial ignore file"}
+      ]
+    },
+    "Subversion": {
+      "description": "Version control system",
+      "configs": [
+        {"path": "~/.subversion/", "description": "Subversion configuration", "directory": true},
+        {"path": "~/.subversion/config", "description": "Subversion main config"}
+      ]
+    }
+  },
+  
+  "Theme and Appearance": {
+    "GTK": {
+      "description": "GTK theme settings",
+      "configs": [
+        {"path": "~/.config/gtk-3.0/", "description": "GTK 3 configuration", "directory": true},
+        {"path": "~/.config/gtk-3.0/settings.ini", "description": "GTK 3 settings"},
+        {"path": "~/.config/gtk-4.0/", "description": "GTK 4 configuration", "directory": true},
+        {"path": "~/.config/gtk-4.0/settings.ini", "description": "GTK 4 settings"},
+        {"path": "~/.gtkrc-2.0", "description": "GTK 2 configuration"},
+        {"path": "~/.config/gtkrc-2.0.mine", "description": "GTK 2 user config"}
+      ]
+    },
+    "KDE Plasma": {
+      "description": "KDE Plasma desktop settings",
+      "configs": [
+        {"path": "~/.config/KDE/", "description": "KDE configuration", "directory": true},
+        {"path": "~/.config/plasma-org.kde.plasma.desktop.appletsrc", "description": "Plasma widgets"},
+        {"path": "~/.config/kdeglobals", "description": "KDE global settings"},
+        {"path": "~/.config/kwinrc", "description": "KWin configuration"},
+        {"path": "~/.config/ksmserverrc", "description": "KDE session manager"}
+      ]
+    },
+    "Qt5ct": {
+      "description": "Qt5 configuration tool",
+      "configs": [
+        {"path": "~/.config/qt5ct/", "description": "Qt5ct configuration", "directory": true},
+        {"path": "~/.config/qt5ct/qt5ct.conf", "description": "Qt5ct main config"}
+      ]
+    },
+    "Qt6ct": {
+      "description": "Qt6 configuration tool",
+      "configs": [
+        {"path": "~/.config/qt6ct/", "description": "Qt6ct configuration", "directory": true},
+        {"path": "~/.config/qt6ct/qt6ct.conf", "description": "Qt6ct main config"}
+      ]
+    },
+    "GNOME Shell": {
+      "description": "GNOME Shell settings",
+      "configs": [
+        {"path": "~/.config/gnome-shell/", "description": "GNOME Shell config", "directory": true},
+        {"path": "~/.config/dconf/user", "description": "Dconf database (includes GNOME settings)"},
+        {"path": "~/.local/share/gnome-shell/extensions/", "description": "GNOME extensions", "directory": true}
+      ]
+    },
+    "Icons": {
+      "description": "Icon theme configuration",
+      "configs": [
+        {"path": "~/.icons/", "description": "User icon themes", "directory": true}
+      ]
+    },
+    "Cursors": {
+      "description": "Cursor theme configuration",
+      "configs": [
+        {"path": "~/.icons/", "description": "Cursor themes", "directory": true}
+      ]
+    }
+  },
+  
+  "Browsers": {
+    "Firefox": {
+      "description": "Web browser",
+      "configs": [
+        {"path": "~/.mozilla/", "description": "Mozilla configuration", "directory": true},
+        {"path": "~/.mozilla/firefox/", "description": "Firefox profiles", "directory": true},
+        {"path": "~/.config/google-chrome/", "description": "Chrome config", "directory": true},
+        {"path": "~/.config/chromium/", "description": "Chromium config", "directory": true},
+        {"path": "~/.config/BraveSoftware/", "description": "Brave config", "directory": true}
+      ]
+    },
+    "Firefox Profile": {
+      "description": "Firefox user profile",
+      "configs": [
+        {"path": "~/.mozilla/firefox/*.default/", "description": "Firefox default profile", "directory": true},
+        {"path": "~/.mozilla/firefox/*.default/prefs.js", "description": "Firefox preferences"},
+        {"path": "~/.mozilla/firefox/*.default/user.js", "description": "Firefox user.js"}
+      ]
+    }
+  },
+  
+  "Package Managers": {
+    "Paru": {
+      "description": "AUR helper for Arch Linux",
+      "configs": [
+        {"path": "~/.config/paru/", "description": "Paru configuration", "directory": true},
+        {"path": "~/.config/paru/paru.conf", "description": "Paru main config"}
+      ]
+    },
+    "Yay": {
+      "description": "Yet another AUR helper",
+      "configs": [
+        {"path": "~/.config/yay/", "description": "Yay configuration", "directory": true},
+        {"path": "~/.config/yay/config.json", "description": "Yay config"}
+      ]
+    },
+    "Pacman": {
+      "description": "Pacman package manager",
+      "configs": [
+        {"path": "/etc/pacman.conf", "description": "Pacman configuration"},
+        {"path": "/etc/pacman.d/mirrorlist", "description": "Pacman mirrors"}
+      ]
+    },
+    "Flatpak": {
+      "description": "Flatpak package manager",
+      "configs": [
+        {"path": "~/.config/flatpak/", "description": "Flatpak configuration", "directory": true}
+      ]
+    },
+    "Snap": {
+      "description": "Snap package manager",
+      "configs": [
+        {"path": "~/.snap/", "description": "Snap configuration", "directory": true},
+        {"path": "~/.config/snapd.conf", "description": "Snapd config"}
+      ]
+    },
+    "NPM": {
+      "description": "Node package manager",
+      "configs": [
+        {"path": "~/.npmrc", "description": "NPM configuration file"},
+        {"path": "~/.npm/", "description": "NPM cache and data", "directory": true}
+      ]
+    },
+    "Pip": {
+      "description": "Python package installer",
+      "configs": [
+        {"path": "~/.pip/", "description": "Pip configuration", "directory": true},
+        {"path": "~/.config/pip/", "description": "Pip config (modern)", "directory": true},
+        {"path": "~/.pip/pip.conf", "description": "Pip config file"}
+      ]
+    },
+    "Cargo": {
+      "description": "Rust package manager",
+      "configs": [
+        {"path": "~/.cargo/", "description": "Cargo configuration", "directory": true},
+        {"path": "~/.cargo/config", "description": "Cargo main config"},
+        {"path": "~/.cargo/config.toml", "description": "Cargo TOML config"}
+      ]
+    },
+    "Go": {
+      "description": "Go programming language",
+      "configs": [
+        {"path": "~/.go/", "description": "Go configuration", "directory": true},
+        {"path": "~/.config/go/", "description": "Go config directory", "directory": true}
+      ]
+    }
+  },
+  
+  "Document Viewers": {
+    "Zathura": {
+      "description": "Document viewer",
+      "configs": [
+        {"path": "~/.config/zathura/", "description": "Zathura configuration", "directory": true},
+        {"path": "~/.config/zathurarc", "description": "Zathura main config"},
+        {"path": "~/.config/zathura/papersize", "description": "Zathura paper size"}
+      ]
+    },
+    "MuPDF": {
+      "description": "Lightweight PDF viewer",
+      "configs": [
+        {"path": "~/.config/mupdf/", "description": "MuPDF configuration", "directory": true}
+      ]
+    }
+  },
+  
+  "Mail Clients": {
+    "Mutt": {
+      "description": "Mail user agent",
+      "configs": [
+        {"path": "~/.mutt/", "description": "Mutt configuration", "directory": true},
+        {"path": "~/.muttrc", "description": "Mutt main config"},
+        {"path": "~/.config/mutt/", "description": "Mutt config directory", "directory": true}
+      ]
+    },
+    "Neomutt": {
+      "description": "Mutt fork with additional features",
+      "configs": [
+        {"path": "~/.config/neomutt/", "description": "NeoMutt configuration", "directory": true},
+        {"path": "~/.config/neomuttrc", "description": "NeoMutt main config"}
+      ]
+    }
+  },
+  
+  "RSS Readers": {
+    "Newsboat": {
+      "description": "RSS/Atom feed reader",
+      "configs": [
+        {"path": "~/.config/newsboat/", "description": "Newsboat configuration", "directory": true},
+        {"path": "~/.config/newsboat/config", "description": "Newsboat main config"},
+        {"path": "~/.config/newsboat/urls", "description": "Newsboat feed URLs"}
+      ]
+    },
+    "Liferea": {
+      "description": "RSS feed aggregator",
+      "configs": [
+        {"path": "~/.config/liferea/", "description": "Liferea configuration", "directory": true}
+      ]
+    }
+  },
+  
+  "Communication": {
+    "Telegram": {
+      "description": "Telegram Desktop",
+      "configs": [
+        {"path": "~/.config/TelegramDesktop/", "description": "Telegram config", "directory": true}
+      ]
+    },
+    "Discord": {
+      "description": "Discord chat client",
+      "configs": [
+        {"path": "~/.config/discord/", "description": "Discord configuration", "directory": true},
+        {"path": "~/.config/discordcanary/", "description": "Discord Canary", "directory": true}
+      ]
+    },
+    "Slack": {
+      "description": "Slack chat client",
+      "configs": [
+        {"path": "~/.config/Slack/", "description": "Slack configuration", "directory": true}
+      ]
+    },
+    "Zoom": {
+      "description": "Zoom video conferencing",
+      "configs": [
+        {"path": "~/.config/zoom/", "description": "Zoom configuration", "directory": true}
+      ]
+    }
+  },
+  
+  "Development Tools": {
+    "Docker": {
+      "description": "Containerization platform",
+      "configs": [
+        {"path": "~/.docker/", "description": "Docker configuration", "directory": true},
+        {"path": "~/.docker/config.json", "description": "Docker config file"},
+        {"path": "~/.dockerignore", "description": "Docker ignore file"}
+      ]
+    },
+    "Kubernetes": {
+      "description": "Container orchestration",
+      "configs": [
+        {"path": "~/.kube/", "description": "Kubernetes configuration", "directory": true},
+        {"path": "~/.kube/config", "description": "Kubeconfig file"}
+      ]
+    },
+    "Vagrant": {
+      "description": "Development environment manager",
+      "configs": [
+        {"path": "~/.vagrant.d/", "description": "Vagrant configuration", "directory": true},
+        {"path": "~/.vagrant.d/Vagrantfile", "description": "Default Vagrantfile"}
+      ]
+    },
+    "Terraform": {
+      "description": "Infrastructure as code",
+      "configs": [
+        {"path": "~/.terraform.d/", "description": "Terraform configuration", "directory": true}
+      ]
+    },
+    "Ansible": {
+      "description": "IT automation tool",
+      "configs": [
+        {"path": "~/.ansible/", "description": "Ansible configuration", "directory": true},
+        {"path": "~/.ansible.cfg", "description": "Ansible config file"}
+      ]
+    }
+  },
+  
+  "Game Launchers": {
+    "Steam": {
+      "description": "Steam gaming platform",
+      "configs": [
+        {"path": "~/.config/Steam/", "description": "Steam configuration", "directory": true}
+      ]
+    },
+    "Lutris": {
+      "description": "Open gaming platform",
+      "configs": [
+        {"path": "~/.config/lutris/", "description": "Lutris configuration", "directory": true},
+        {"path": "~/.config/lutris/lutris.conf", "description": "Lutris main config"}
+      ]
+    },
+    "RetroArch": {
+      "description": "Libretro frontend",
+      "configs": [
+        {"path": "~/.config/retroarch/", "description": "RetroArch configuration", "directory": true},
+        {"path": "~/.config/retroarch/retroarch.cfg", "description": "RetroArch main config"}
+      ]
+    },
+    "PCSX2": {
+      "description": "PlayStation 2 emulator",
+      "configs": [
+        {"path": "~/.config/pcsx2/", "description": "PCSX2 configuration", "directory": true}
+      ]
+    },
+    "Dolphin": {
+      "description": "GameCube/Wii emulator",
+      "configs": [
+        {"path": "~/.config/dolphin-emu/", "description": "Dolphin configuration", "directory": true}
+      ]
+    }
+  },
+  
+  "Productivity": {
+    "Obsidian": {
+      "description": "Knowledge base",
+      "configs": [
+        {"path": "~/.config/Obsidian/", "description": "Obsidian configuration", "directory": true}
+      ]
+    },
+    "Joplin": {
+      "description": "Note-taking app",
+      "configs": [
+        {"path": "~/.config/joplin/", "description": "Joplin configuration", "directory": true}
+      ]
+    },
+    "Todoist": {
+      "description": "Task management",
+      "configs": [
+        {"path": "~/.config/Todoist/", "description": "Todoist configuration", "directory": true}
+      ]
+    },
+    "LibreOffice": {
+      "description": "Office suite",
+      "configs": [
+        {"path": "~/.config/libreoffice/", "description": "LibreOffice config", "directory": true},
+        {"path": "~/.config/LibreOffice/", "description": "LibreOffice user config", "directory": true}
+      ]
+    }
+  },
+  
+  "System Monitor": {
+    "Glances": {
+      "description": "Cross-platform system monitoring",
+      "configs": [
+        {"path": "~/.config/glances/", "description": "Glances configuration", "directory": true},
+        {"path": "~/.config/glances/glances.conf", "description": "Glances main config"}
+      ]
+    },
+    "Bashtop": {
+      "description": "Resource monitor written in bash",
+      "configs": [
+        {"path": "~/.config/bashtop/", "description": "Bashtop configuration", "directory": true}
+      ]
+    }
+  },
+  
+  "Password Managers": {
+    "Bitwarden": {
+      "description": "Password manager",
+      "configs": [
+        {"path": "~/.config/Bitwarden/", "description": "Bitwarden config", "directory": true}
+      ]
+    },
+    "KeepassXC": {
+      "description": "Password manager",
+      "configs": [
+        {"path": "~/.config/keepassxc/", "description": "KeePassXC configuration", "directory": true}
+      ]
+    },
+    "1Password": {
+      "description": "Password manager",
+      "configs": [
+        {"path": "~/.config/1Password/", "description": "1Password configuration", "directory": true}
+      ]
+    }
+  },
+  
+  "Cloud Storage": {
+    "Dropbox": {
+      "description": "Cloud storage",
+      "configs": [
+        {"path": "~/.dropbox/", "description": "Dropbox configuration", "directory": true}
+      ]
+    },
+    "Nextcloud": {
+      "description": "Cloud storage client",
+      "configs": [
+        {"path": "~/.config/Nextcloud/", "description": "Nextcloud config", "directory": true}
+      ]
+    },
+    "Rclone": {
+      "description": "rsync for cloud storage",
+      "configs": [
+        {"path": "~/.config/rclone/", "description": "Rclone configuration", "directory": true},
+        {"path": "~/.rclone.conf", "description": "Rclone main config"}
+      ]
+    }
+  },
+  
+  "Text Processing": {
+    "Pandoc": {
+      "description": "Document converter",
+      "configs": [
+        {"path": "~/.config/pandoc/", "description": "Pandoc configuration", "directory": true},
+        {"path": "~/.pandoc/", "description": "Pandoc config directory", "directory": true}
+      ]
+    },
+    "LaTeX": {
+      "description": "Typesetting system",
+      "configs": [
+        {"path": "~/.config/latexmk/", "description": "Latexmk configuration", "directory": true},
+        {"path": "~/.latexmkrc", "description": "Latexmk main config"}
+      ]
+    }
+  },
+  
+  "Terminal Multiplexers": {
+    "Tmux": {
+      "description": "Terminal multiplexer",
+      "configs": [
+        {"path": "~/.tmux.conf", "description": "Tmux main configuration"},
+        {"path": "~/.config/tmux/", "description": "Tmux configuration", "directory": true},
+        {"path": "~/.config/tmux/tmux.conf", "description": "Tmux config file"}
+      ]
+    },
+    "Screen": {
+      "description": "Terminal multiplexer",
+      "configs": [
+        {"path": "~/.screenrc", "description": "Screen main configuration"},
+        {"path": "~/.config/screen/", "description": "Screen configuration", "directory": true}
+      ]
+    }
+  },
+  
+  "Input Methods": {
+    "IBus": {
+      "description": "Intelligent Input Bus",
+      "configs": [
+        {"path": "~/.config/ibus/", "description": "IBus configuration", "directory": true},
+        {"path": "~/.config/ibus/bus/", "description": "IBus daemon config", "directory": true}
+      ]
+    },
+    "Fcitx": {
+      "description": "Input method framework",
+      "configs": [
+        {"path": "~/.config/fcitx/", "description": "Fcitx configuration", "directory": true},
+        {"path": "~/.config/fcitx5/", "description": "Fcitx5 configuration", "directory": true}
+      ]
+    }
+  },
+  
+  "Clipboard Managers": {
+    "CopyQ": {
+      "description": "Clipboard manager",
+      "configs": [
+        {"path": "~/.config/copyq/", "description": "CopyQ configuration", "directory": true}
+      ]
+    },
+    "Greenclip": {
+      "description": "Clipboard manager for Rofi",
+      "configs": [
+        {"path": "~/.config/greenclip/", "description": "Greenclip configuration", "directory": true}
+      ]
+    }
+  },
+  
+  "Color Picker": {
+    "Grim": {
+      "description": "Color picker for Wayland",
+      "configs": [
+        {"path": "~/.config/grim/", "description": "Grim configuration", "directory": true}
+      ]
+    },
+    "Color Picker": {
+      "description": "Color picker utility",
+      "configs": [
+        {"path": "~/.config/color-picker/", "description": "Color picker config", "directory": true}
+      ]
+    }
+  },
+  
+  "Screenshots": {
+    "Flameshot": {
+      "description": "Screenshot tool",
+      "configs": [
+        {"path": "~/.config/flameshot/", "description": "Flameshot configuration", "directory": true},
+        {"path": "~/.config/flameshot/flameshot.ini", "description": "Flameshot main config"}
+      ]
+    },
+    "Scrot": {
+      "description": "Screenshot tool",
+      "configs": [
+        {"path": "~/.config/scrot/", "description": "Scrot configuration", "directory": true}
+      ]
+    }
+  },
+  
+  "Automation": {
+    "AutoKey": {
+      "description": "Automation utility",
+      "configs": [
+        {"path": "~/.config/autokey/", "description": "AutoKey configuration", "directory": true}
+      ]
+    },
+    "cron": {
+      "description": "Time-based job scheduler",
+      "configs": [
+        {"path": "~/.config/crontab", "description": "User crontab file"},
+        {"path": "~/.cron.d/", "description": "Cron directory", "directory": true}
+      ]
+    }
+  },
+  
+  "Miscellaneous": {
+    "Xbindkeys": {
+      "description": "Key binding daemon",
+      "configs": [
+        {"path": "~/.xbindkeysrc", "description": "Xbindkeys configuration"},
+        {"path": "~/.config/xbindkeys/", "description": "Xbindkeys config", "directory": true}
+      ]
+    },
+    "Xmodmap": {
+      "description": "Keyboard modifier mapping",
+      "configs": [
+        {"path": "~/.Xmodmap", "description": "Xmodmap configuration"},
+        {"path": "~/.xmodmap", "description": "Xmodmap user config"}
+      ]
+    },
+    "AutoLogin": {
+      "description": "Automatic login configuration",
+      "configs": [
+        {"path": "~/.config/autologin/", "description": "Autologin config", "directory": true}
+      ]
+    },
+    "GnuPG Agent": {
+      "description": "GPG agent configuration",
+      "configs": [
+        {"path": "~/.gnupg/gpg-agent.conf", "description": "GPG agent config"},
+        {"path": "~/.config/gpg-agent.conf", "description": "GPG agent config"}
+      ]
+    }
+  }
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dotvault.controller.SettingsController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    
+    <ScrollPane fitToWidth="true" styleClass="settings-scroll">
+        <VBox spacing="25" styleClass="settings-content">
+            
+            <!-- Backup Settings Section -->
+            <VBox spacing="15" styleClass="settings-section">
+                <Label text="Backup Settings" styleClass="section-header"/>
+                
+                <VBox spacing="10">
+                    <Label text="Default Backup Directory" styleClass="setting-label"/>
+                    <HBox spacing="10">
+                        <TextField fx:id="defaultBackupDirField" promptText="Enter backup directory path" HBox.hgrow="ALWAYS"/>
+                        <Button fx:id="defaultBackupDirBrowseButton" text="Browse" mnemonicParsing="false" onAction="#onBrowseBackupDir"/>
+                    </HBox>
+                    <Label text="Default location where backups will be stored" styleClass="setting-description"/>
+                </VBox>
+                
+                <VBox spacing="10">
+                    <HBox spacing="10" alignment="CENTER_LEFT">
+                        <CheckBox fx:id="compressCheckBox" text="Compress backups"/>
+                        <ChoiceBox fx:id="compressionFormatChoice" prefWidth="100"/>
+                    </HBox>
+                    <Label text="Create compressed archive files (.zip or .tar.gz)" styleClass="setting-description"/>
+                </VBox>
+                
+                <VBox spacing="10">
+                    <CheckBox fx:id="preservePermissionsCheckBox" text="Preserve file permissions (Linux only)"/>
+                    <Label text="Maintain file permissions and ownership during backup/restore" styleClass="setting-description"/>
+                </VBox>
+                
+                <VBox spacing="10">
+                    <CheckBox fx:id="followSymlinksCheckBox" text="Follow symbolic links"/>
+                    <Label text="Include files that symlinks point to (may cause loops)" styleClass="setting-description"/>
+                </VBox>
+                
+                <VBox spacing="10">
+                    <CheckBox fx:id="createTimestampFolderCheckBox" text="Create timestamped folder"/>
+                    <Label text="Create a new folder with current timestamp for each backup" styleClass="setting-description"/>
+                </VBox>
+                
+                <VBox spacing="10">
+                    <CheckBox fx:id="skipHiddenCheckBox" text="Skip hidden files and directories"/>
+                    <Label text="Skip files and directories starting with a dot (.)" styleClass="setting-description"/>
+                </VBox>
+                
+                <VBox spacing="10">
+                    <Label text="Exclude Patterns" styleClass="setting-label"/>
+                    <TextArea fx:id="excludePatternsField" promptText="*.log, cache, temp" prefRowCount="3"/>
+                    <Label text="Comma-separated patterns to exclude from backup" styleClass="setting-description"/>
+                </VBox>
+            </VBox>
+            
+            <Separator/>
+            
+            <!-- UI Settings Section -->
+            <VBox spacing="15" styleClass="settings-section">
+                <Label text="UI Settings" styleClass="section-header"/>
+                
+                <VBox spacing="10">
+                    <CheckBox fx:id="darkModeCheckBox" text="Dark Mode"/>
+                    <Label text="Use dark color theme (requires restart)" styleClass="setting-description"/>
+                </VBox>
+                
+                <VBox spacing="10">
+                    <HBox spacing="10" alignment="CENTER_LEFT">
+                        <Label text="Recent Directories" styleClass="setting-label"/>
+                        <Spinner fx:id="maxRecentDirsSpinner" editable="true" prefWidth="80"/>
+                    </HBox>
+                    <Label text="Number of recent directories to remember" styleClass="setting-description"/>
+                </VBox>
+                
+                <VBox spacing="10">
+                    <CheckBox fx:id="autoScanCheckBox" text="Auto-scan on startup"/>
+                    <Label text="Automatically scan for configurations when application starts" styleClass="setting-description"/>
+                </VBox>
+            </VBox>
+            
+            <Separator/>
+            
+            <!-- Actions -->
+            <HBox spacing="10" alignment="CENTER_RIGHT">
+                <Button fx:id="resetDefaultsButton" text="Reset to Defaults" mnemonicParsing="false" onAction="#onResetDefaults" styleClass="secondary-button"/>
+                <Button fx:id="cancelButton" text="Cancel" mnemonicParsing="false" onAction="#onCancel" styleClass="secondary-button"/>
+                <Button fx:id="saveButton" text="Save Settings" mnemonicParsing="false" onAction="#onSave" styleClass="primary-button"/>
+            </HBox>
+            
+        </VBox>
+    </ScrollPane>
+</VBox>
